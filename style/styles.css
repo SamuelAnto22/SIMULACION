@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+
+}
+section{
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 3.5rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 375px;
+    height: 881px;
+    border-radius: 20px;
+    gap: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.left .image img{
+    width: 149px;
+    height: 180px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+}
+.info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+}
+.info2 i{
+    width: 25px;
+    height: 25px;
+}
+.info button{
+    width: 176px;
+    height: 39px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+
+}
+.info h1{
+    font-size: 24px;
+    
+
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    background-color: white;
+    width: 1170px;
+    height: 881px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    
+
+}
+
+.imag img{
+    width: 372px;
+    height: 276px;
+    object-fit: cover;
+    
+    
+    
+}
+.imag{
+    overflow: hidden;
+    
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #fafafa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    
+
+    
+}
+.right h1{
+    font-size: 36px;
+}
+.clothe{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+    width: 440px;
+    height: 276px;
+    text-align: end;
+    padding: 2rem;
+    gap: 20px;
+    
+}
+.clothe p{
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.titulos{
+    display: flex;
+   justify-content: left;
+   align-items: start;
+   text-align: start;
+   padding-right: 655px;
+
+}
+
+
+
+    @media screen and (max-width: 768px) {
+        section {
+            flex-direction: column;
+            padding: 1rem;
+            gap: 30px;
+            height: auto;
+        }
+    
+        .left {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+    
+        .right {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+    
+        .block {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .imag {
+            width: 100%;
+        }
+    
+        .imag img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .clothe {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .titulos {
+            padding-right: 0;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        .right h1 {
+            font-size: 28px;
+        }
+    
+        .info button {
+            width: 100%;
+            max-width: 300px;
+        }
+    
+        .info h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .imag {
+            width: 100%;
+            height: 250px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+        section {
+            padding: 0.5rem;
+        }
+    
+        .left .image img {
+            width: 120px;
+            height: auto;
+        }
+    
+        .info2 i {
+            width: 20px;
+            height: 20px;
+        }
+    
+        .clothe h1 {
+            font-size: 20px;
+        }
+    
+        .clothe p {
+            font-size: 14px;
+        }
+    
+        .right h1 {
+            font-size: 24px;
+        }
+    
+        .block {
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    @media screen and (max-height: 800px) {
+        section {
+            height: auto;
+        }
+    }
